@@ -1,7 +1,5 @@
-from sympy import false
 import torch
 import torch.nn as nn
-
 
 class Frequencies(nn.Module):
   def __init__(self, max_seq_length,head_dim):
@@ -105,15 +103,3 @@ class TPA(nn.Module):
     out = out.contiguous().view(-1,s,self.hidden_dim)
     return self.Wo(out)
   
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
